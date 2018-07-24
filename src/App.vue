@@ -1,13 +1,27 @@
 <template>
   <div id="app">
-    <SmoothScroll class="smooth-scroll">
+    <div class="vertical-scroll">
+      <div class="long-text">
+        <ol>
+          <li v-for="n in 200" :key="n">I have {{n}} doggo!</li>
+        </ol>
+      </div>
+    </div>
+    <div class="horizontal-scroll">
+      <div class="long-text">
+        <p class="horizontal-text">
+          <span v-for="n in 200" :key="n">I have {{n}} doggo!</span>
+        </p>
+      </div>
+    </div>
+    <SmoothScroll class="smooth-vertical-scroll">
       <div class="long-text">
         <ol>
           <li v-for="n in 200" :key="n">I have {{n}} doggo!</li>
         </ol>
       </div>
     </SmoothScroll>
-    <SmoothScroll class="horizontal-scroll" :invert="true">
+    <SmoothScroll class="smooth-horizontal-scroll">
       <div class="long-text">
         <p class="horizontal-text">
           <span v-for="n in 200" :key="n">I have {{n}} doggo!</span>
@@ -47,12 +61,13 @@ html, body, #app {
   color: #2c3e50;
 }
 
-.smooth-scroll {
+.vertical-scroll {
   position: absolute;
   top: 0%;
   left: 0%;
   width: 50%;
-  height: 100%;
+  height: 50%;
+  overflow: auto;
 }
 
 .horizontal-scroll {
@@ -60,7 +75,24 @@ html, body, #app {
   top: 0%;
   left: 50%;
   width: 50%;
-  height: 100%;
+  height: 50%;
+  overflow: auto;
+}
+
+.smooth-vertical-scroll {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 50%;
+  height: 50%;
+}
+
+.smooth-horizontal-scroll {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
 }
 
 .content {
