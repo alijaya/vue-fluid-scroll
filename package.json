@@ -1,14 +1,21 @@
 {
   "name": "smooth-scroll",
   "version": "0.1.0",
+  "main": "./src/components/SmoothScroll.vue",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
   "private": true,
   "scripts": {
+    "build-bundle": "vue-cli-service build --dest dist --target lib --name smooth-scroll ./src/components/SmoothScroll.vue",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "vue": "^2.5.16"
+    "vue": "^2.5.16",
+    "vue-resize": "^0.4.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.5",
