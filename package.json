@@ -1,12 +1,12 @@
 {
   "name": "smooth-scroll",
   "version": "0.1.0",
+  "license": "MIT",
   "main": "./src/components/SmoothScroll.vue",
   "files": [
     "dist/*",
     "src/*"
   ],
-  "private": true,
   "scripts": {
     "build-bundle": "vue-cli-service build --dest dist --target lib --name smooth-scroll ./src/components/SmoothScroll.vue",
     "serve": "vue-cli-service serve",
