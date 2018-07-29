@@ -1,6 +1,6 @@
 {
   "name": "vue-fluid-scroll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue Component for creating fluid scroll. Sometimes you need to scroll with the scrollbar, but the scrolling not fluid enough (because there's a 'step' when you scroll. You want it smoothly transitioned. This is what you need!",
   "keywords": [
     "vue",
