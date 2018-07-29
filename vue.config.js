@@ -1,4 +1,4 @@
 module.exports = {
-  baseUrl: "/smooth-scroll/",
+  baseUrl: "/vue-fluid-scroll/",
   outputDir: "/docs/"
 }

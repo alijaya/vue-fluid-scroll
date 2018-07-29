@@ -1,5 +1,5 @@
 <template>
-  <FakeScroll 
+  <VueFakeScroll 
     :scroll-width="scrollWidth" 
     :scroll-height="scrollHeight" 
     @update="handleUpdate">
@@ -7,17 +7,17 @@
       <ResizeObserver @notify="handleResize"/>
       <slot />
     </div>
-  </FakeScroll>
+  </VueFakeScroll>
 </template>
 
 <script>
-import FakeScroll from 'fake-scroll'
+import VueFakeScroll from 'vue-fake-scroll'
 import { ResizeObserver } from 'vue-resize'
 
 export default {
-  name: 'smooth-scroll',
+  name: 'vue-fluid-scroll',
   components: {
-    FakeScroll,
+    VueFakeScroll,
     ResizeObserver,
   },
   props: {

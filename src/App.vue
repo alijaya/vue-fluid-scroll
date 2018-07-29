@@ -14,30 +14,30 @@
         </p>
       </div>
     </div>
-    <SmoothScroll class="smooth-vertical-scroll">
+    <VueFluidScroll class="fluid-vertical-scroll">
       <div class="long-text">
         <ol>
           <li v-for="n in 200" :key="n">I have {{n}} doggo!</li>
         </ol>
       </div>
-    </SmoothScroll>
-    <SmoothScroll class="smooth-horizontal-scroll">
+    </VueFluidScroll>
+    <VueFluidScroll class="fluid-horizontal-scroll">
       <div class="long-text">
         <p class="horizontal-text">
           <span v-for="n in 200" :key="n">I have {{n}} doggo!</span>
         </p>
       </div>
-    </SmoothScroll>
+    </VueFluidScroll>
   </div>
 </template>
 
 <script>
-import SmoothScroll from './components/SmoothScroll'
+import VueFluidScroll from './components/VueFluidScroll'
 
 export default {
   name: 'app',
   components: {
-    SmoothScroll,
+    VueFluidScroll,
   },
 }
 </script>
@@ -79,7 +79,7 @@ html, body, #app {
   overflow: auto;
 }
 
-.smooth-vertical-scroll {
+.fluid-vertical-scroll {
   position: absolute;
   top: 50%;
   left: 0%;
@@ -87,7 +87,7 @@ html, body, #app {
   height: 50%;
 }
 
-.smooth-horizontal-scroll {
+.fluid-horizontal-scroll {
   position: absolute;
   top: 50%;
   left: 50%;
