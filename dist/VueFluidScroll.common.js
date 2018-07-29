@@ -1,14 +1,5 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else if(typeof exports === 'object')
-		exports["vue-fluid-scroll"] = factory();
-	else
-		root["vue-fluid-scroll"] = factory();
-})(typeof self !== 'undefined' ? self : this, function() {
-return /******/ (function(modules) { // webpackBootstrap
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -722,5 +713,4 @@ module.exports = g;
 /***/ })
 
 /******/ })["default"];
-});
-//# sourceMappingURL=vue-fluid-scroll.umd.js.map
+//# sourceMappingURL=VueFluidScroll.common.js.map
