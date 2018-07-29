@@ -6619,6 +6619,13 @@ vue-eslint-parser@^2.0.3:
     esquery "^1.0.0"
     lodash "^4.17.4"
 
+vue-fake-scroll@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/vue-fake-scroll/-/vue-fake-scroll-1.0.2.tgz#ddff53040c8a000b3117e6e851a75bf0ff5c9cf9"
+  dependencies:
+    vue "^2.5.16"
+    vue-resize "^0.4.4"
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.0.tgz#97976142405d13d8efae154749e88c4e358cf926"
