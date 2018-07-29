@@ -6,7 +6,7 @@ Vue Component for creating fluid scroll. Sometimes you need to scroll with the s
 
 ## Installation
 
-```npm
+```bash
 npm install --save vue-fluid-scroll
 ```
 
